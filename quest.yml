@@ -39,3 +39,6 @@ steps:
   - open_question_indexing_challenges
 type: MODULE
 repository: https://github.com/hummusonrails/vector-search-nodejs-workshop
+frameworks:
+  backend:
+    - node
