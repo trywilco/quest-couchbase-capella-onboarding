@@ -1,6 +1,5 @@
 id: create_vector_search_index
 learningObjectives:
-  - Explore how to create a vector search index.
 hints: []
 startFlow:
   do:
@@ -8,12 +7,9 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Let's get serious about indexing. We'll create a vector search index.
-          - text: Indexing is crucial for executing similarity searches efficiently.
-          - text: Use Couchbase Shell to create the index with `vector create-index`.
-          - text: Provide bucket name and specified metrics for dot-product similarity.
-          - text: Indexing prepares data for swift, precise querying.
-          - text: When your index is ready, signal for the next step.
+          - text: Let's get serious about indexing. We'll create a [vector search index](https://docs.couchbase.com/server/current/vector-search/vector-search.html).
+          - text: Indexing is crucial for executing similarity searches efficiently. Use Couchbase Shell to create the index with `vector create-index`.
+          - text: Provide bucket name and specified metrics for dot-product similarity. Indexing prepares data for swift, precise querying. When your index is ready, signal for the next step.
     - actionId: ready_message
       params:
         person: lucca

@@ -9,11 +9,8 @@ startFlow:
         person: lucca
         messages:
           - text: Embeddings make your searches smarter by enriching data context.
-          - text: Use the `/embed` endpoint with an OpenAI API key for dynamic embeddings.
-          - text: Alternatively, import data with pre-generated embeddings directly.
-          - text: You'll set the `USE_LOCAL_EMBEDDING` flag based on your choice.
-          - text: Make sure your `.env` file is updated for API if going that route.
-          - text: Let's nail those data embeddings! Ready to move forward?
+          - text: Use the `/embed` endpoint with an OpenAI API key for dynamic embeddings. Alternatively, import data with pre-generated embeddings directly.
+          - text: You'll set the `USE_LOCAL_EMBEDDING` flag based on your choice. Make sure your `.env` file is updated for API if going that route. Let's nail those data embeddings! Ready to move forward?
     - actionId: ready_message
       params:
         person: lucca

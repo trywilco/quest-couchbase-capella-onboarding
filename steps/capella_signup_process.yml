@@ -9,13 +9,8 @@ startFlow:
         person: lucca
         messages:
           - text: Now that you're aware of what Capella can do, let's create an account.
-          - text: To sign up, visit [Couchbase Capella
-              Sign-Up](https://cloud.couchbase.com/signup).
-          - text: You'll need to provide some basic details to create your free account
-              quickly.
-          - text: Having an account is the first step in connecting to Capella's features.
-          - text: These features assist in deploying efficient modern applications.
-          - text: Once signed up, let me know, and we can proceed.
+          - text: To sign up, visit [Couchbase Capella Sign-Up](https://cloud.couchbase.com/sign-in). You'll need to provide some basic details to create your free account quickly.
+          - text: Having an account is the first step in connecting to Capella's features. These features assist in deploying efficient modern applications. Once signed up, let me know, and we can proceed.
     - actionId: ready_message
       params:
         person: lucca

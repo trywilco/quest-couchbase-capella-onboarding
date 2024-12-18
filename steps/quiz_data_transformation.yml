@@ -10,8 +10,7 @@ startFlow:
         person: lucca
         messages:
           - text: Pop quiz time! Which method uses dynamic data transformation?
-          - text: "Your options are simple, just like your choice of beverage: static or
-              dynamic?"
+          - text: "Your options are simple, just like your choice of beverage: static or dynamic?"
     - actionId: quiz_message
       name: quiz
       params:
@@ -32,8 +31,7 @@ trigger:
               params:
                 person: lucca
                 messages:
-                  - text: Almost! Pre-generated means using static embeddings without transformation
-                      at the API level. Try again!
+                  - text: Almost! Pre-generated means using static embeddings without transformation at the API level. Try again!
             - actionId: replay_action
               params:
                 actionName: quiz
@@ -43,8 +41,7 @@ trigger:
               params:
                 person: lucca
                 messages:
-                  - text: Bingo! Using the `/embed` endpoint requires real-time transformation with
-                      an API key.
+                  - text: Bingo! Using the `/embed` endpoint requires real-time transformation with an API key. For more details, check out the [documentation](https://example.com).
             - actionId: finish_step
         C:
           do:
@@ -52,8 +49,7 @@ trigger:
               params:
                 person: lucca
                 messages:
-                  - text: Not exactly, one of them clearly involves pre-existing data
-                      transformation.
+                  - text: Not exactly, one of them clearly involves pre-existing data transformation. Try again!
             - actionId: replay_action
               params:
                 actionName: quiz

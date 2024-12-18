@@ -1,6 +1,5 @@
 id: import_pre_generated_embeddings
 learningObjectives:
-  - Know how to import data with pre-generated embeddings.
 hints: []
 startFlow:
   do:
@@ -8,14 +7,9 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Time to import data with embeddings. It's like importing your childhood
-              photo album.
-          - text: Pre-generated embeddings offer a quick start for your searches.
-          - text: Jump into the `individual_items_with_embedding` directory.
-          - text: Edit `./config_file/config` with your Couchbase Capella details.
-          - text: Use Couchbase Shell to bring your data directly into the bucket.
-          - text: Adjustments in the shell ensure you're communicating with your cluster.
-          - text: Signal when you're done importing so we can proceed.
+          - text: Time to import data with embeddings. It's like importing your childhood photo album.
+          - text: "[Pre-generated embeddings](https://www.couchbase.com/blog/what-are-vector-embeddings/) offer a quick start for your searches. Jump into the `individual_items_with_embedding` directory."
+          - text: Edit `./config_file/config` with your Couchbase Capella details. Use Couchbase Shell to bring your data directly into the bucket. Adjustments in the shell ensure you're communicating with your cluster. Signal when you're done importing so we can proceed.
     - actionId: ready_message
       params:
         person: lucca

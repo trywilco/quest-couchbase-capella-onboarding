@@ -10,6 +10,7 @@ startFlow:
         person: lucca
         messages:
           - text: How well do you know indexing now? What command creates a vector index?
+          - text: Think about the specific keyword used in the command.
     - actionId: quiz_message
       name: quiz
       params:
@@ -30,7 +31,7 @@ trigger:
               params:
                 person: lucca
                 messages:
-                  - text: Yes! You've got the command syntax memorized.
+                  - text: Yes! You've got the command syntax memorized. Great job!
             - actionId: finish_step
         B:
           do:
@@ -38,7 +39,7 @@ trigger:
               params:
                 person: lucca
                 messages:
-                  - text: Ah, close but not quite. It's not related to cluster creation.
+                  - text: Ah, close but not quite. It's not related to cluster creation. Try again!
             - actionId: replay_action
               params:
                 actionName: quiz
@@ -48,7 +49,7 @@ trigger:
               params:
                 person: lucca
                 messages:
-                  - text: Oops, not the right phrase. Think about vector-specific operations.
+                  - text: Oops, not the right phrase. Think about vector-specific operations. Give it another shot!
             - actionId: replay_action
               params:
                 actionName: quiz

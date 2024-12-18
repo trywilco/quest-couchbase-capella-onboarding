@@ -9,11 +9,8 @@ startFlow:
         person: lucca
         messages:
           - text: Let's dive into creating buckets—our next ninja move.
-          - text: Buckets in Couchbase are the containers for your data.
-          - text: From inside your cluster dashboard, click '+ Create'.
-          - text: Define your bucket's options, then hit 'Create'.
-          - text: Buckets ensure your data is organized and manageable.
-          - text: Feeling organized already? Proceed when ready.
+          - text: "[Buckets in Couchbase](https://docs.couchbase.com/server/current/learn/buckets-memory-and-storage/buckets.html) are the containers for your data. From inside your cluster dashboard, click '+ Create'."
+          - text: Define your bucket's options, then hit 'Create'. Buckets ensure your data is organized and manageable. Feeling organized already?
     - actionId: ready_message
       params:
         person: lucca

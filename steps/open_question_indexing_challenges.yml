@@ -83,12 +83,7 @@ trigger:
             params:
               person: lucca
               messages:
-                - text: ${outputs.user_answer.value.reply}
-          - actionId: bot_message
-            params:
-              person: lucca
-              messages:
-                - text: Great job wrapping up the Couchbase Capella onboarding!
+                - text: ${outputs.user_answer.value.reply} Great job wrapping up the Couchbase Capella onboarding! For more information, visit the [documentation](https://example.com).
           - actionId: finish_step
       else:
         do:
