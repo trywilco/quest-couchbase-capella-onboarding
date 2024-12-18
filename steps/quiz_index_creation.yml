@@ -1,0 +1,54 @@
+id: quiz_index_creation
+learningObjectives:
+  - Confirm understanding of index creation.
+hints:
+  - Look back at the specific keyword used in the command.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: How well do you know indexing now? What command creates a vector index?
+    - actionId: quiz_message
+      name: quiz
+      params:
+        person: lucca
+        options:
+          - vector create-index
+          - cluster create-index
+          - index-docs
+trigger:
+  type: chat_form_submitted
+  flowNode:
+    switch:
+      key: ${formSubmission}
+      cases:
+        A:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Yes! You've got the command syntax memorized.
+            - actionId: finish_step
+        B:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Ah, close but not quite. It's not related to cluster creation.
+            - actionId: replay_action
+              params:
+                actionName: quiz
+        C:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Oops, not the right phrase. Think about vector-specific operations.
+            - actionId: replay_action
+              params:
+                actionName: quiz

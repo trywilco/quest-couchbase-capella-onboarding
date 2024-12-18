@@ -1,0 +1,41 @@
+id: couchbase_capella_onboarding
+title: Couchbase Capella Onboarding
+subtitle: Start with Couchbase for seamless app building
+description: >-
+  Welcome to the Couchbase Capella quest! We'll explore Capella, a fully managed
+  database service for modern app development.
+
+
+  First, you'll navigate through signing up and creating your Couchbase cluster, building the foundation for using Capella's features.
+
+
+  Then, you'll delve into creating buckets and transforming data for vector search using Couchbase Vector Search.
+
+
+  You'll learn to generate embeddings using options like the OpenAI API or local embeddings, configure data import, and create indexes.
+
+
+  By the end, you'll gain hands-on experience with querying for efficient data retrieval and unlocking Couchbase Capella's full potential.
+level: intermediate
+duration: 1.5
+skills:
+  - database management
+  - cloud computing
+  - data transformation
+  - vector search
+  - nodejs
+steps:
+  - intro_to_couchbase_capella
+  - capella_signup_process
+  - create_couchbase_cluster
+  - create_a_bucket
+  - transform_data_vector_search
+  - generate_embeddings_steps
+  - quiz_data_transformation
+  - import_pre_generated_embeddings
+  - create_vector_search_index
+  - quiz_index_creation
+  - search_data
+  - open_question_indexing_challenges
+type: MODULE
+repository: https://github.com/hummusonrails/vector-search-nodejs-workshop

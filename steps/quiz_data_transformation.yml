@@ -1,0 +1,59 @@
+id: quiz_data_transformation
+learningObjectives:
+  - Check understanding of data transformation process.
+hints:
+  - Think about the one that requires an API.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Pop quiz time! Which method uses dynamic data transformation?
+          - text: "Your options are simple, just like your choice of beverage: static or
+              dynamic?"
+    - actionId: quiz_message
+      name: quiz
+      params:
+        person: lucca
+        options:
+          - Pre-generated embeddings import method
+          - Dynamic embedding with `/embed` endpoint
+          - Both methods are dynamic
+trigger:
+  type: chat_form_submitted
+  flowNode:
+    switch:
+      key: ${formSubmission}
+      cases:
+        A:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Almost! Pre-generated means using static embeddings without transformation
+                      at the API level. Try again!
+            - actionId: replay_action
+              params:
+                actionName: quiz
+        B:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Bingo! Using the `/embed` endpoint requires real-time transformation with
+                      an API key.
+            - actionId: finish_step
+        C:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Not exactly, one of them clearly involves pre-existing data
+                      transformation.
+            - actionId: replay_action
+              params:
+                actionName: quiz

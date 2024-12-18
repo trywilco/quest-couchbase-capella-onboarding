@@ -1,0 +1,25 @@
+id: search_data
+learningObjectives:
+  - Learn how to search using vector embeddings and custom queries.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: It's time to search data like a pro with vector embeddings.
+          - text: Using the `/search` endpoint, find similar items based on vector data.
+          - text: In your query, leverage `useLocalEmbedding` on provided items or input
+              your own.
+          - text: You can run queries after setting up embeddings and indices.
+          - text: Query-handling using vector index boosts retrieval accuracy and speed.
+          - text: Feeling like Sherlock yet? Let's wrap things up efficiently.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

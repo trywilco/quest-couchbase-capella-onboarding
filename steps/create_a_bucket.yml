@@ -1,0 +1,24 @@
+id: create_a_bucket
+learningObjectives:
+  - Understand how to create a new bucket in Couchbase.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Let's dive into creating buckets—our next ninja move.
+          - text: Buckets in Couchbase are the containers for your data.
+          - text: From inside your cluster dashboard, click '+ Create'.
+          - text: Define your bucket's options, then hit 'Create'.
+          - text: Buckets ensure your data is organized and manageable.
+          - text: Feeling organized already? Proceed when ready.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

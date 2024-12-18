@@ -1,0 +1,25 @@
+id: create_couchbase_cluster
+learningObjectives:
+  - Learn how to create a Couchbase cluster.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Excited to set things up? Let's build a Couchbase cluster.
+          - text: Clusters are essential for housing all your Couchbase projects.
+          - text: On the dashboard, find and click 'Create Cluster'.
+          - text: Choose a cloud provider, name your cluster, and select a region.
+          - text: Click 'Create Cluster'. You've leveled up your database management skills!
+          - text: Clusters make handling large data sets a breeze.
+          - text: When your cluster is active, hit that button for the next step.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

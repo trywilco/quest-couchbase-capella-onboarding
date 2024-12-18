@@ -1,0 +1,23 @@
+id: transform_data_vector_search
+learningObjectives:
+  - Introduce data transformation for vector search.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Buckle up! We're diving into transforming data for vector search.
+          - text: Data needs formatting before indexing and searching in the vector engine.
+          - text: Using Couchbase Vector Search enhances data retrieval efficiency.
+          - text: Transformation sets the base for vector similarity assessments.
+          - text: Continue to see how to manage data transformation effectively.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

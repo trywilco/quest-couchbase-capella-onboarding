@@ -1,1 +1,0 @@
-# quest-couchbase-capella-onboarding

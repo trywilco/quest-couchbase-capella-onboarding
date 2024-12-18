@@ -1,0 +1,26 @@
+id: intro_to_couchbase_capella
+learningObjectives:
+  - Understand Couchbase Capella's capabilities.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Hello, and welcome! I'm Lucca, your guide through Couchbase Capella.
+          - text: Capella is a fully managed DB service, perfect for modern app building.
+          - text: It offers features that help seamlessly manage and deploy your databases.
+          - text: With Capella, you can focus on building rather than managing
+              infrastructure.
+          - text: Learning how to use Capella is crucial for scalability and efficient app
+              development.
+          - text: When you're ready to dive deeper, click to continue.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
