@@ -42,3 +42,6 @@ repository: https://github.com/hummusonrails/vector-search-nodejs-workshop
 frameworks:
   backend:
     - node
+sidebarTools:
+  - name: Couchbase
+    link: https://cloud.couchbase.com/
