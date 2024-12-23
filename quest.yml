@@ -45,3 +45,5 @@ frameworks:
 sidebarTools:
   - name: Couchbase
     link: https://cloud.couchbase.com/
+  - name: Couchbase Shell
+    link: https://couchbase.sh/
